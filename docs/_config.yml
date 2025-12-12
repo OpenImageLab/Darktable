@@ -1,13 +1,13 @@
-# --- Theme Configuration ---
 remote_theme: "mmistakes/minimal-mistakes"
 
-# --- Site Settings ---
-title: "Darktable 5.x Tutorial"
-author: "Jacques Morand"
-description: "A comprehensive tutorial for processing raw images."
+# --- URL Configuration (CRITICAL) ---
+# url: "https://username.github.io"
+url: "https://openimagelab.github.io" 
 
-# --- Layout Defaults ---
-# This automatically applies the sticky TOC to all pages (including your home page)
+# baseurl: "/repo-name"
+baseurl: "/Darktable" 
+
+# --- Defaults ---
 defaults:
   - scope:
       path: ""
@@ -15,5 +15,5 @@ defaults:
     values:
       layout: single
       toc: true
-      toc_label: "Contents"
       toc_sticky: true
+      toc_label: "Contents"
