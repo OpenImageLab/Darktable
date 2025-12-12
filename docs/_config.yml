@@ -2,8 +2,8 @@
 remote_theme: "just-the-docs/just-the-docs"
 
 # --- Site Information (Required) ---
-title: Tutorial process raw Images with Darktable 5.x
-description: A clean, documentation-focused Jekyll theme.
+title: Process raw Images with Darktable 5.x
+description: A clean, documentation-focused Jekyll theme for raw image processing with Darktable 5.x.
 
 # --- JTD Sidebar Configuration ---
 # The sidebar is the *main* left-side navigation structure.
