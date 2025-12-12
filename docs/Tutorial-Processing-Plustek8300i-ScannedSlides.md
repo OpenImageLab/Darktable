@@ -1,3 +1,9 @@
+---
+title: "Chapter Title: Tutorial Process raw Images with Darktable 5.x"
+layout: default # <-- Use the default layout for automatic TOC generation
+nav_order: 1 # <-- Optional: Sets its position in the left sidebar nav
+---
+
 <img src="./media/image75.png"
 style="width:6.26772in;height:1.44444in" />
 
@@ -17,142 +23,6 @@ December 11th, 2025
 **© 2025 Jacques Morand. All rights reserved**
 
 # Table of Content
-
-[**Table of Content 1**](#table-of-content)
-
-[**1. Introduction 3**](#introduction)
-
-> [1.1 A Note for the Beginners 3](#a-note-for-the-beginners)
->
-> [1.1.1 The Beginner’s Nightmare 3](#the-beginners-nightmare)
->
-> [1.1.2 Common Beginner Pitfalls (short list)
-> 4](#common-beginner-pitfalls-short-list)
->
-> [1.1.3 What you can expect from this tutorial
-> 4](#what-you-can-expect-from-this-tutorial)
->
-> [1.2 Copyright and Disclaimer 5](#copyright-and-disclaimer)
->
-> [1.3 Context 6](#context)
->
-> [1.3.1 Darktable Version 6](#darktable-version)
->
-> [1.3.2 Processing of raw Images 6](#processing-of-raw-images)
->
-> [Where do the raw images come from for this tutorial ?
-> 6](#where-do-the-raw-images-come-from-for-this-tutorial)
->
-> [The Process Workflow 7](#the-process-workflow)
->
-> [Crucial Distinction: Scanner Raw vs. Digital Camera Raw
-> 7](#crucial-distinction-scanner-raw-vs.-digital-camera-raw)
->
-> [1.3.3 Scene-referred Workflow a new Approach
-> 8](#scene-referred-workflow-a-new-approach)
->
-> [1.4 The 4 most important basic Adjustments
-> 8](#the-4-most-important-basic-adjustments)
->
-> [1.4.1 White balance and color calibration - Module Color calibration
-> 8](#white-balance-and-color-calibration---module-color-calibration)
->
-> [1.4.2 Exposure - Module Exposure 9](#exposure---module-exposure)
->
-> [1.4.3 Set white and black points - Module Sigmoid
-> 9](#set-white-and-black-points---module-sigmoid)
->
-> [1.4.4 Color Calibration - Module Color calibration
-> 9](#color-calibration---module-color-calibration)
-
-[**3. Darktable initial Settings 10**](#darktable-initial-settings)
-
-> [3.1 Import raw Images from PC to darktable Library
-> 10](#import-raw-images-from-pc-to-darktable-library)
->
-> [3.2 Import Style for scanner Plustek 8300i
-> 12](#import-style-for-scanner-plustek-8300i)
->
-> [3.3 Set Darktable Preferences 13](#set-darktable-preferences)
-
-[**4. Workflow to process raw Images
-15**](#workflow-to-process-raw-images)
-
-> [4.1 Image Selection and Processing in darktable
-> 15](#image-selection-and-processing-in-darktable)
->
-> [4.2 Clear Modules History 16](#clear-modules-history)
->
-> [4.3 Apply Style “Plustek-8300i” 17](#apply-style-plustek-8300i)
->
-> [4.4 Process the Exposure 18](#process-the-exposure)
->
-> [4.5 Process the Color Calibration 19](#process-the-color-calibration)
->
-> [4.6 Store the processed image in darktable database
-> 21](#store-the-processed-image-in-darktable-database)
-
-[**5. Export processed Images 22**](#export-processed-images)
-
-> [5.1 Export processed image in TIFF Format
-> 23](#export-processed-image-in-tiff-format)
->
-> [5.2 Export processed image in JPEG Format
-> 25](#export-processed-image-in-jpeg-format)
-
-[**6. Modules of Style Plustek-8300i
-27**](#modules-of-style-plustek-8300i)
-
-> [6.1 Module White balance 28](#module-white-balance)
->
-> [6.2 Module Highlight reconstruction
-> 28](#module-highlight-reconstruction)
->
-> [6.3 Module Orientation 28](#module-orientation)
->
-> [6.4 Module Tone equalizer Plustek-8200i
-> 28](#module-tone-equalizer-plustek-8200i)
->
-> [6.5 Module Crop - Plustek-8200i 29](#module-crop---plustek-8200i)
->
-> [6.6 Module Input color profile 30](#module-input-color-profile)
->
-> [6.7 Module Color calibration 31](#module-color-calibration)
->
-> [6.8 Module Diffuse or sharpen - Dehaze - Default
-> 31](#module-diffuse-or-sharpen---dehaze---default)
->
-> [6.9 Module Diffuse or sharpen - Plustek 8200i
-> 32](#module-diffuse-or-sharpen---plustek-8200i)
->
-> [6.10 Module Color Balance RGB - Plustek-8200i
-> 34](#module-color-balance-rgb---plustek-8200i)
->
-> [6.11 Module Sigmoid - Plustek-8200i
-> 35](#module-sigmoid---plustek-8200i)
->
-> [6.12 Module Local contrast - Plustek-8200i
-> 36](#module-local-contrast---plustek-8200i)
->
-> [6.13 Module Output color profile 37](#module-output-color-profile)
-
-[**7. Other useful Modules 39**](#other-useful-modules)
-
-> [7.1 Module Rotate and perspective 39](#module-rotate-and-perspective)
->
-> [7.2 Module Retouch 40](#module-retouch)
->
-> [7.3 Red Eyes Removal 40](#red-eyes-removal)
-
-[**8. Annexes 44**](#annexes)
-
-> [dtstyles 44](#dtstyles)
->
-> [Mel265 44](#mel265)
->
-> [Jade-nl 44](#jade-nl)
->
-> [Joao Pedro Almedia 44](#joao-pedro-almedia)
 
 # 1. Introduction
 
