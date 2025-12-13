@@ -1,11 +1,41 @@
-/* Simple two-column layout */
+/* 1. FLEXBOX PARENT: Ensures the children display side-by-side */
+#wrapper {
+    display: flex; /* Activate flexbox */
+    max-width: 1200px; /* Optional: Sets a max width for the whole page */
+    margin: 0 auto; /* Centers the whole page */
+    padding: 20px;
+}
+
+/* 2. TOC SIDEBAR: Fixed width, but scrollable */
 #toc-sidebar {
-    width: 250px;
-    float: left; /* Pushes the TOC to the left */
-    padding: 20px;
+    /* Fix the width of the sidebar */
+    flex: 0 0 250px; 
+    padding-right: 30px; 
+    /* Optional: Makes it sticky as you scroll the main content */
+    /* position: sticky; 
+    top: 20px; */
 }
+
+/* 3. MAIN CONTENT: Takes up the remaining space */
 #content {
-    margin-left: 300px; /* Pushes the main content over */
-    padding: 20px;
+    flex: 1; /* Tells the main content to take all available space */
+    min-width: 0; /* Prevents long lines of code/text from pushing the sidebar */
+    padding-left: 30px;
 }
-/* You also need to link the CSS in your default.html (Step 2) */
+
+/* 4. Optional: Responsive Breakpoint (Crucial for smaller screens/phones) */
+@media (max-width: 900px) {
+    #wrapper {
+        display: block; /* Stack the columns vertically */
+        padding: 10px;
+    }
+    #toc-sidebar {
+        width: 100%; /* Full width when stacked */
+        padding-right: 0;
+        margin-bottom: 20px; /* Adds space after the TOC */
+    }
+    #content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
