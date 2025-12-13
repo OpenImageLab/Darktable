@@ -6,7 +6,7 @@ description: A comprehensive tutorial for processing raw images with Darktable 5
 markdown: kramdown 
 
 # CRITICAL: This MUST match your repository name
-baseurl: "/Darktable"
+baseurl: "/darktable"
 
 # --- Theme-Specific Settings (DELETE THESE IF PRESENT) ---
 # REMOVE: remote_theme: "mmistakes/minimal-mistakes"
