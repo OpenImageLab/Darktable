@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <meta name="description" content="{{ page.description | strip_html | escape }}">
+    <meta name="keywords" content="{{ page.keywords | join: ', ' }}">
+    <meta name="author" content="{{ page.author }}">
+
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description | strip_html | escape }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+    
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css"> 
 </head>
+
+    
 <body>
     <div class="page-wrapper">
         <aside class="toc-sidebar">
