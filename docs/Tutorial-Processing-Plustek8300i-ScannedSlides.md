@@ -1,15 +1,24 @@
 ---
-layout: default  # <-- Tells Jekyll to use the file you created in Step 2
-title: "Processing raw Images with Darktable 5.x" # <-- Sets the title for the browser tab
-permalink: "/index.html"
+
+# Basic parameters for jekyll and liquid
+layout: default 
+title: "Tutorial: Process and improve RAW Images with Darktable 5.x"
+author: "Jacques Morand"
+date: 2025-12-12 10:30:00 -0500
+permalink: /index.html # Use a short, keyword-rich URL
+
+# CRITICAL SEO FIELDS
+description: "A highly comprehensive, step-by-step tutorial for beginners on processing RAW image files scanned with a Plustek 8300i using Darktable 5.x for superior and professional film photography results."
+keywords: darktable, raw image processing, png files, optifilm scanner plustek 8300i, film or diapositives scanning, tutorial, photography, raw image processing workflow, scene-referred sigmoid workflow, darktable modules and presets
+category: darktable # Used for filtering, can also help SEO by association
+
 ---
 
 <img src="./media/image75.png"
 style="width:6.26772in;height:1.44444in" />
 
-Tutorial  
-**Processing Plustek 8300i  
-scanned Slides  
+**Tutorial  
+Processing RAW Images from Plustek 8300i scanned Slides  
 with Darktable 5.x**
 
 <img src="./media/image2.png" style="width:0.48958in"
