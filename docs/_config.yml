@@ -10,6 +10,6 @@ baseurl: "/Darktable"
 
 # --- Theme-Specific Settings (DELETE THESE IF PRESENT) ---
 # REMOVE: remote_theme: "mmistakes/minimal-mistakes"
-# REMOVE: baseurl: "/Darktable"
+# REMOVE: baseurl: "/darktable"
 # REMOVE: url: "https://openimagelab.github.io"
 # REMOVE: Any 'defaults' or 'kramdown' blocks related to specific themes.
