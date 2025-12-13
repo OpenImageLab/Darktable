@@ -1,6 +1,7 @@
 ---
 layout: default  # <-- Tells Jekyll to use the file you created in Step 2
 title: "Processing raw Images with Darktable 5.x" # <-- Sets the title for the browser tab
+permalink: "/index.html"
 ---
 
 <img src="./media/image75.png"
