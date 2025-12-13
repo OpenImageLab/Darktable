@@ -1,41 +1,61 @@
-/* 1. FLEXBOX PARENT: Ensures children display side-by-side */
+/*
+ * Base Styling for Custom Jekyll Layout
+ * Uses Flexbox for two-column layout and sticky TOC scrolling
+ */
+
+/* 1. FLEXBOX PARENT: Sets up the two-column structure */
 .page-wrapper {
     display: flex; /* Activate flexbox */
-    max-width: 1400px; /* Give it a reasonable max width */
-    margin: 0 auto; /* Center the whole page */
+    max-width: 1400px; /* Max width for the entire page content */
+    margin: 0 auto; /* Center the whole page on large screens */
+    padding: 20px; /* General padding around the edges */
+    padding-top: 50px; /* Push content down from the browser top */
 }
 
-/* 2. TOC SIDEBAR: Fixed width, sticky position, wrap text */
+/* 2. TOC SIDEBAR: Fixed width, sticky position, and internal scrolling */
 .toc-sidebar {
-    flex: 0 0 280px; /* Fixed width of 280px */
+    /* Fixed width for the sidebar */
+    flex: 0 0 280px; 
     padding-right: 20px;
     
-    /* Make the TOC stick as you scroll the content */
+    /* Make the TOC stick to the top of the browser window */
     position: sticky; 
-    top: 20px; 
-    height: fit-content; /* Only take the space needed */
+    top: 50px; /* Distance from the top of the viewport */
+    
+    /* CRITICAL FIXES FOR SCROLLING */
+    /* Allows the content to scroll internally if it exceeds max-height */
+    overflow-y: auto; 
+    /* Ensures the TOC box doesn't take up the full screen height */
+    max-height: 90vh; 
 
-    /* 💥 FIX: Ensure long text wraps (see Point 2 below) 💥 */
+    /* FIX FOR LONG HEADER TEXT WRAPPING */
     word-wrap: break-word; 
     overflow-wrap: break-word;
+
+    /* Optional: Styling for visual separation */
+    /* border-right: 1px solid #ddd; */
 }
 
 /* 3. MAIN CONTENT: Takes up the remaining space */
 .main-content {
-    flex: 1; /* Takes up all remaining space */
+    flex: 1; /* Tells the main content to take all available space */
     padding-left: 30px;
-    border-left: 1px solid #eee; /* Optional visual separation */
+    min-width: 0; /* Prevents overflow issues with very long lines */
+
+    /* Optional: Styling for visual separation */
+    /* border-left: 1px solid #eee; */
 }
 
-/* 4. Responsive Breakpoint: Stack columns on smaller screens */
+/* 4. RESPONSIVE BREAKPOINT: Stacks the columns on smaller screens (tablets in portrait, phones) */
 @media (max-width: 1000px) {
     .page-wrapper {
         display: block; /* Stacks the columns vertically */
         padding: 10px;
     }
     .toc-sidebar {
-        width: 90%; /* Full width when stacked */
-        position: static; /* Remove sticky position */
+        width: 100%; /* Full width when stacked */
+        position: static; /* Remove sticky position when stacked */
+        max-height: none; /* No height restriction when stacked */
         margin-bottom: 20px;
         padding-right: 0;
     }
@@ -45,3 +65,13 @@
         border-left: none;
     }
 }
+
+/* 5. TOC Specific Styling (optional, to clean up the look) */
+.toc-sidebar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0;
+}
+.toc-sidebar li {
+    padding: 3px 0;
+}
+
