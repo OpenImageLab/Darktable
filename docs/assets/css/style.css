@@ -1,41 +1,47 @@
-/* 1. FLEXBOX PARENT: Ensures the children display side-by-side */
-#wrapper {
+/* 1. FLEXBOX PARENT: Ensures children display side-by-side */
+.page-wrapper {
     display: flex; /* Activate flexbox */
-    max-width: 1200px; /* Optional: Sets a max width for the whole page */
-    margin: 0 auto; /* Centers the whole page */
-    padding: 20px;
+    max-width: 1400px; /* Give it a reasonable max width */
+    margin: 0 auto; /* Center the whole page */
 }
 
-/* 2. TOC SIDEBAR: Fixed width, but scrollable */
-#toc-sidebar {
-    /* Fix the width of the sidebar */
-    flex: 0 0 250px; 
-    padding-right: 30px; 
-    /* Optional: Makes it sticky as you scroll the main content */
-    /* position: sticky; 
-    top: 20px; */
+/* 2. TOC SIDEBAR: Fixed width, sticky position, wrap text */
+.toc-sidebar {
+    flex: 0 0 280px; /* Fixed width of 280px */
+    padding-right: 20px;
+    
+    /* Make the TOC stick as you scroll the content */
+    position: sticky; 
+    top: 20px; 
+    height: fit-content; /* Only take the space needed */
+
+    /* 💥 FIX: Ensure long text wraps (see Point 2 below) 💥 */
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
 }
 
 /* 3. MAIN CONTENT: Takes up the remaining space */
-#content {
-    flex: 1; /* Tells the main content to take all available space */
-    min-width: 0; /* Prevents long lines of code/text from pushing the sidebar */
+.main-content {
+    flex: 1; /* Takes up all remaining space */
     padding-left: 30px;
+    border-left: 1px solid #eee; /* Optional visual separation */
 }
 
-/* 4. Optional: Responsive Breakpoint (Crucial for smaller screens/phones) */
-@media (max-width: 900px) {
-    #wrapper {
-        display: block; /* Stack the columns vertically */
+/* 4. Responsive Breakpoint: Stack columns on smaller screens */
+@media (max-width: 1000px) {
+    .page-wrapper {
+        display: block; /* Stacks the columns vertically */
         padding: 10px;
     }
-    #toc-sidebar {
-        width: 100%; /* Full width when stacked */
+    .toc-sidebar {
+        width: 90%; /* Full width when stacked */
+        position: static; /* Remove sticky position */
+        margin-bottom: 20px;
         padding-right: 0;
-        margin-bottom: 20px; /* Adds space after the TOC */
     }
-    #content {
+    .main-content {
         margin-left: 0;
         padding-left: 0;
+        border-left: none;
     }
 }
