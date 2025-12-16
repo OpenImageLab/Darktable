@@ -418,33 +418,34 @@ Darktable.
 
 <table>
 <colgroup>
-<col style="width: 17%; text-align: left;" />
-<col style="width: 23%; text-align: left;" />
-<col style="width: 59%; text-align: left;" />
+<col style="width: 17%;" />
+<col style="width: 23%;" />
+<col style="width: 59%;" />
 </colgroup>
 <thead>
-<tr class="header">
-<th><strong>Shortcut Key</strong></th>
-<th><strong>Shortcut Name</strong></th>
-<th><strong>Explanation</strong></th>
-</tr>
-<tr class="odd">
-<th><strong>l</strong></th>
-<th>Lighttable workspace</th>
-<th><p>Press keyboard letter <strong>l</strong> to switch to Lighttable
-workspace.</p>
-<p><em>The Lighttable workspace is used to select the raw image(s) to
-process in Darkroom workspace</em></p></th>
-</tr>
-<tr class="header">
-<th><strong>d</strong></th>
-<th>Darkroom workspace</th>
-<th><p>Press keyboard letter <strong>d</strong> to switch to Darkroom
-workspace.</p>
-<p>The Darkroom workspace is used to process the raw images.</p></th>
-</tr>
+  <tr class="header">
+    <th style="text-align: left;"><strong>Shortcut Key</strong></th>
+    <th style="text-align: left;"><strong>Shortcut Name</strong></th>
+    <th style="text-align: left;"><strong>Explanation</strong></th>
+  </tr>
 </thead>
 <tbody>
+  <tr class="odd">
+    <td style="text-align: left;"><strong>l</strong></td>
+    <td style="text-align: left;">Lighttable workspace</td>
+    <td style="text-align: left;">
+      <p>Press keyboard letter <strong>l</strong> to switch to Lighttable workspace.</p>
+      <p><em>The Lighttable workspace is used to select the raw image(s) to process in Darkroom workspace</em></p>
+    </td>
+  </tr>
+  <tr class="even">
+    <td style="text-align: left;"><strong>d</strong></td>
+    <td style="text-align: left;">Darkroom workspace</td>
+    <td style="text-align: left;">
+      <p>Press keyboard letter <strong>d</strong> to switch to Darkroom workspace.</p>
+      <p>The Darkroom workspace is used to process the raw images.</p>
+    </td>
+  </tr>
 </tbody>
 </table>
 
