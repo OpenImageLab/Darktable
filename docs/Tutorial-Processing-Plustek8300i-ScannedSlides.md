@@ -576,7 +576,7 @@ conversions with film-like presets or adjusting RGB channels for color
 grading.
 
 The color calibration is done using the Module “Color calibration” on
-the left panel.
+the right panel.
 
 ►Open the module “Color calibration”
 
