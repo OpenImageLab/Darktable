@@ -30,7 +30,7 @@ This tutorial guides you through a complete workflow: fixing white balance, expo
 | Format | Filename | Best For... |
 | :--- | :--- | :--- |
 | **GitHub Page** | [Click here to view the web page](https://openimagelab.github.io/darktable/) | **Dual-Monitor Setup:** Perfect for displaying on a secondary screen while you work in darktable on your primary monitor. Includes an interactive Table of Contents. |
-| **PDF** |`Tutorial_Processing_Raw_Images_Darktable_5.x.pdf`<br>Click on the group [Releases](https://github.com/OpenImageLab/darktable/releases) in the right panel and select the `latest` Release `Processing raw Images with Darktable 5.x` to download the document.| **Print & Read:** Ideal for users who prefer reading printed documents or viewing a fixed layout on a tablet. |
+| **PDF** |**Tutorial_Processing_Raw_Images_Darktable_5.x.pdf**<br>Click on the group [Releases](https://github.com/OpenImageLab/darktable/releases) in the right panel and select the `latest` Release `Processing raw Images with Darktable 5.x` to download the document.| **Print & Read:** Ideal for users who prefer reading printed documents or viewing a fixed layout on a tablet. |
 | **DOCX** |`Tutorial_Processing_Raw_Images_Darktable_5.x.docx`<br>Click on the Release on the right panel to download the document.| **Personal Notes:** Intended for users who wish to annotate the guide, highlight key sections, or add their own observations directly into the document. |
 
 ### 2. The Darktable Style
