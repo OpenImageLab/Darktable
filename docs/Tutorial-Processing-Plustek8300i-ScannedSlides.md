@@ -1349,7 +1349,7 @@ The workflow is straightforward and requires a second instance of the
 Color calibration Module and the use of masks to set the position and
 size of the “red” pupils.
 
-#### 1. Create a New Instance of Color calibration Module
+**1. Create a New Instance of Color calibration Module**
 
 ►Create a second instance of the “Color calibration Module” by clicking
 on the “Multiple instance action” button <img src="./media/image70.png"
@@ -1364,7 +1364,7 @@ style="width:2.47396in;height:2.44871in" />
 <img src="./media/image17.png"
 style="width:1.54167in;height:1.41667in" />
 
-#### 2. Disable Chromatic Adaptation Transform (CAT)
+**2. Disable Chromatic Adaptation Transform (CAT)**
 
 By default, this module tries to adapt colors (CAT). We need to disable
 that math so it acts as a dumb mixer.
@@ -1375,7 +1375,7 @@ color adaptation.
 <img src="./media/image32.png"
 style="width:3.5625in;height:1.59375in" />
 
-#### 3. Create the Mask
+**3. Create the Mask**
 
 ►On the bottom bar, click on the button <img src="./media/image54.png"
 style="width:0.28125in;height:0.26042in" /> “Drawn mask”, to draw a mask
@@ -1447,7 +1447,7 @@ concentric circles on each eye hovered.
 on the image. To display the outer circle, you will have to hover each
 mask.*
 
-#### 4. The Channel Mix (The Fix)
+**4. The Channel Mix (The Fix)**
 
 Now we perform the "surgery" on the Red channel.
 
