@@ -19,7 +19,7 @@ style="width:6.26772in;height:1.44444in" />
 
 **Tutorial  
 Processing RAW Images from Plustek 8300i scanned Slides  
-with Darktable 5.x**
+with Darktable 5.x**<br>
 Version 1.0
 
 <img src="./media/image2.png" style="width:0.48958in"
