@@ -82,3 +82,51 @@ html, body {
     padding: 3px 0;
 }
 
+/* ----------------------------------------------------------- */
+/* 6. TABLE STYLING: Restores Borders and Striped Rows         */
+/* ----------------------------------------------------------- */
+
+.main-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 0.95em;
+    line-height: 1.5;
+    display: table; /* Overrides potential block display issues */
+}
+
+/* Header Styling */
+.main-content table th {
+    background-color: #f6f8fa; /* Light grey header */
+    color: #24292e;
+    font-weight: 600;
+    border: 1px solid #dfe2e5;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+/* Data Cell Styling */
+.main-content table td {
+    border: 1px solid #dfe2e5;
+    padding: 10px 12px;
+    vertical-align: top;
+}
+
+/* Zebra Striping (Alternate Row Colors) */
+.main-content table tr:nth-child(even) {
+    background-color: #f6f8fa;
+}
+
+/* Hover effect for better readability */
+.main-content table tr:hover {
+    background-color: #f2f4f6;
+}
+
+/* Mobile Responsive Tables */
+@media (max-width: 768px) {
+    .main-content table {
+        display: block;
+        overflow-x: auto; /* Adds horizontal scroll on small phones */
+        white-space: normal;
+    }
+}
